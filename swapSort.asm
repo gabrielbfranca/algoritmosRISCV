@@ -1,3 +1,6 @@
+# https://onedrive.live.com/?authkey=%21ADZXwaqFMxgoSc4&id=6CE119DC06403022%21553148&cid=6CE119DC06403022
+# https://luplab.gitlab.io/rvcodecjs/
+# https://godbolt.org/
 .data
 vetor: .word 9,2,5,1,8,2,4,3,6,7
 newl: .string "\n"
@@ -21,10 +24,10 @@ exit:	li a7,10
 	
 clear1: mv t0, zero # while
 Loop1: 
-	slli t1, t0, 2 #iteração
-	add t2, a0, t1 #t2 é o endereço, instrução executa iteração
-	sw zero, 0(t2) # execução
-	addi t0, t0, 1 # próxima iteração
+	slli t1, t0, 2 #iteraÃ§Ã£o
+	add t2, a0, t1 #t2 Ã© o endereÃ§o, instruÃ§Ã£o executa iteraÃ§Ã£o
+	sw zero, 0(t2) # execuÃ§Ã£o
+	addi t0, t0, 1 # prÃ³xima iteraÃ§Ã£o
 	blt t0, a1, Loop1 
 	ret
 
@@ -43,7 +46,7 @@ print:
 	
 
 swap:
-	slli t1,a1,2 # posição			
+	slli t1,a1,2 # posiÃ§Ã£o			
 	add t2, a4, t1
 	lw t3, 0(t2)
 	lw t4, 4(t2)
@@ -56,7 +59,7 @@ sort: mv t0, zero
 sortloop:
 	# i = t0 j = t5
 	slli t1, t0,2
-	add t2, a4, t1 # t2 enderço do vetor com nova posição	
+	add t2, a4, t1 # t2 enderÃ§o do vetor com nova posiÃ§Ã£o	
 	beq t0, zero, firstJump
 	# novo loop
 	sub t5, t0, 1
