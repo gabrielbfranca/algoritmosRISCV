@@ -1,6 +1,7 @@
 # https://onedrive.live.com/?authkey=%21ADZXwaqFMxgoSc4&id=6CE119DC06403022%21553148&cid=6CE119DC06403022
 # https://luplab.gitlab.io/rvcodecjs/
 # https://godbolt.org/
+# https://www.h-schmidt.net/FloatConverter/IEEE754.html
 .data
 vetor: .word 9,2,5,1,8,2,4,3,6,7
 newl: .string "\n"
